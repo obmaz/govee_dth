@@ -68,8 +68,9 @@ def firstPage() {
             paragraph "You can get the API key in official Govee App"
         }
 
+        //d10f0582-26eb-4225-915a-b6b62d35089x
         section {
-            input(name: "apiKey", type: "text", title: "API Key", required: true, description: "", defaultValue: "d10f0582-26eb-4225-915a-b6b62d35089x")
+            input(name: "apiKey", type: "text", title: "API Key", required: true, description: "", defaultValue: "")
         }
         
         section {
