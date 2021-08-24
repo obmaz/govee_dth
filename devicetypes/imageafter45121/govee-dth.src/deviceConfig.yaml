@@ -1,0 +1,100 @@
+dashboard:
+  states:
+    - component: main
+      capability: switch
+      version: 1
+      values: []
+  actions:
+    - component: main
+      capability: switch
+      version: 1
+detailView:
+  - component: main
+    capability: switch
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: switchLevel
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: refresh
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: colorControl
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: colorTemperature
+    version: 1
+    values: []
+    patch: []
+automation:
+  conditions:
+    - component: main
+      capability: switch
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: switchLevel
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: refresh
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: colorControl
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: colorTemperature
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+  actions:
+    - component: main
+      capability: switch
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: switchLevel
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: refresh
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: colorControl
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: colorTemperature
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+type: dth
