@@ -3,8 +3,7 @@ This app creates a virtual device to control govee led in SmartThings.
 
 ## Limitation
 ### Status Sync
-The Govee API does not support webhook or any push so If the state has changed externally, there is no way to apply it.  
-Instead, this DTH polls the state every miniute. Therefore, if you use govee device directly or other app, it may take up to 1 minute for the status to be applied.
+The Govee API does not support webhook or any push so If the state has changed externally, there is no way to apply it. Instead, this DTH polls the state every miniute. Therefore, if you use govee device directly or other app, it may take up to 1 minute for the status to be applied.
 
 ### Rate Limit of API
 From govee API doc. 
@@ -32,7 +31,7 @@ Add github repo to both "My SmartApps" and "My Device Handlers"
 Publish DTH : devicetypes/imageafter45121/govee-led.src/govee-led.groovy  
 Publish SmartApp : smartapps/imageafter45121/govee-led-connector.src/govee-led-connector.groovy
 
-## Run Smartapp
+### Run Smartapp
 Add and Run SmartApp in your device to create virtual device.  
 
 * SmartApp Screen
@@ -44,7 +43,11 @@ Add and Run SmartApp in your device to create virtual device.
 
 ![ui](./readme_images/app1.jpg)
 
-## Support Devices
+## Support
+### Features
+All functions provided by Govee API are supported. Since functions such as mode change are not provided by the API, DTH is also not provided.  
+
+### Devices
 Test Device : H6199  
   
 H6160, H6163,
