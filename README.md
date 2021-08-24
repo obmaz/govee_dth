@@ -23,7 +23,7 @@ You can get the API key in govee official app.
 ### Add Repository
 SmartThings Groovy IDE site https://graph.api.smartthings.com/  
 Add github repo to both "My SmartApps" and "My Device Handlers"
-- add owner : obmaz / name : govee_led_connector / branch : main
+- add owner : obmaz / name : govee_dth / branch : main
 
 ![dth](./readme_images/repo_add.png)
 
