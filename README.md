@@ -63,3 +63,6 @@ H618E, H619E
 
 ## Reference
 Govee API : https://govee-public.s3.amazonaws.com/developer-docs/GoveeAPIReference.pdf
+
+## License
+It is released under the Apache 2.0 License.
