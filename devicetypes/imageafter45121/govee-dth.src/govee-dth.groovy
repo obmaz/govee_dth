@@ -45,6 +45,9 @@ metadata {
     }
 }
 
+def cmds = []
+cmds << "delay 1000"
+
 def updateLastTime() {
     log.debug "updateLastTime"
     def now = new Date().format("yyyy-MM-dd HH:mm:ss", location.timeZone)
@@ -64,11 +67,12 @@ def initialize() {
     log.debug "initialize"
     refresh()
     // runEvery1Minute(refresh) // it can be cause http exception due to calling collision
-    runEvery30Minute(refresh) // Hour : runEvery1Hour(), runEvery3Hour()
+    runEvery5Minute(refresh) // Hour : runEvery1Hour(), runEvery3Hour()
 }
 
 def refresh() {
     log.debug "refresh"
+    cmds
     def query = [device: deviceMac, model: deviceModel]
     def state = sendCommand1("GET", "/v1/devices/state", query, null)
     updateAttribute(state)
