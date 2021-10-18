@@ -64,7 +64,7 @@ def initialize() {
     log.debug "initialize"
     refresh()
     // runEvery1Minute(refresh) // it can be cause http exception due to calling collision
-    runEvery30Minute(refresh)
+    runEvery30Minute(refresh) // Hour : runEvery1Hour(), runEvery3Hour()
 }
 
 def refresh() {
