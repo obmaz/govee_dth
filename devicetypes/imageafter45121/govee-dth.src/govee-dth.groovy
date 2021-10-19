@@ -45,9 +45,6 @@ metadata {
     }
 }
 
-def cmds = []
-cmds << "delay 1000"
-
 def updateLastTime() {
     log.debug "updateLastTime"
     def now = new Date().format("yyyy-MM-dd HH:mm:ss", location.timeZone)
@@ -66,16 +63,36 @@ def updated() {
 def initialize() {
     log.debug "initialize"
     refresh()
-    // runEvery1Minute(refresh) // it can be cause http exception due to calling collision
     runEvery5Minute(refresh) // Hour : runEvery1Hour(), runEvery3Hour()
 }
 
 def refresh() {
     log.debug "refresh"
-    cmds
+	sleepForDuration(1000)
     def query = [device: deviceMac, model: deviceModel]
     def state = sendCommand1("GET", "/v1/devices/state", query, null)
     updateAttribute(state)
+}
+
+def sleepForDuration(duration)
+{
+    def now = new Date()
+    log.debug "sleepForDuration start : $now"
+    
+	def dTotalSleep = 0
+	def dStart = new Date().getTime()
+    def cmds = []
+	cmds << "delay 1000"
+
+    while (dTotalSleep <= duration)
+    {            
+		cmds
+        dTotalSleep = (new Date().getTime() - dStart)
+    }
+    def now2 = new Date()
+    log.debug "sleepForDuration end : $now2"
+    
+    log.debug "Slept ${dTotalSleep}ms"
 }
 
 // Switch
