@@ -45,7 +45,8 @@ Add and Run SmartApp in your device to create virtual device.
 
 ## Support
 ### Features
-All functions provided by Govee API are supported. Since functions such as mode change are not provided by the API, DTH is also not provided.  
+All functions provided by Govee API are supported.  
+Some functions like mode change are not provided by the API, so DTH also does not support.  
 
 ### Devices
 Test Device : H6199  
