@@ -92,7 +92,7 @@ def sleepForDuration(duration)
     def now2 = new Date()
     log.debug "sleepForDuration end : $now2"
     
-    log.debug "Slept ${dTotalSleep}ms"
+    log.debug "sleepForDuration : Slept ${dTotalSleep}ms"
 }
 
 // Switch
