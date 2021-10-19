@@ -3,7 +3,7 @@ This app creates a virtual device to control govee led in SmartThings.
 
 ## Limitation
 ### Status Sync
-The Govee API does not support webhook or any push so If the state has changed externally, there is no way to apply it. Instead, this DTH polls the state every miniute. Therefore, if you use govee device directly or other app, it may take up to 1 minute for the status to be applied.
+The Govee API does not support webhook or any push so If the state has changed externally, there is no way to apply it. Instead, this DTH polls the state every miniute. Therefore, if you use govee device directly or other app, it may take up to 5 minute for the status to be applied.
 
 ### Rate Limit of API
 From govee API doc. 
