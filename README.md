@@ -1,8 +1,11 @@
 # Govee DTH and Smartapp
+***
 This app creates a virtual device to control govee led in SmartThings.
 
 ## Limitation
+***
 ### Status Sync
+
 The Govee API does not support webhook or any push so If the state has changed externally, there is no way to apply it. Instead, this DTH polls the state every miniute. Therefore, if you use govee device directly or other app, it may take up to 5 minute for the status to be applied.
 
 ### Rate Limit of API
@@ -16,10 +19,12 @@ If the smartthings server has one IP and multiple people use this DTH, it can ca
 If the number of users increases, I will modify it to use own IP by using a private relay server such as Docker.  
 
 ## Pre Requirement
+***
 ### Govee API Key
 You can get the API key in govee official app.  
 
 ## Install
+***
 ### Add Repository
 SmartThings Groovy IDE site https://graph.api.smartthings.com/  
 Add github repo to both "My SmartApps" and "My Device Handlers"
@@ -44,6 +49,7 @@ Add and Run SmartApp in your device to create virtual device.
 ![ui](./readme_images/app1.jpg)
 
 ## Support
+***
 ### Features
 All functions provided by Govee API are supported.  
 Some functions like mode change are not provided by the API, so DTH also does not support.  
@@ -63,7 +69,9 @@ H619C, H618A, H618C, H6008, H6071, H6075 , H614A, H614B, H614E,
 H618E, H619E
 
 ## Reference
+***
 Govee API : https://govee-public.s3.amazonaws.com/developer-docs/GoveeAPIReference.pdf
 
 ## License
+***
 It is released under the MIT License.
