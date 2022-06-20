@@ -63,7 +63,6 @@ H619C, H618A, H618C, H6008, H6071, H6075 , H614A, H614B, H614E,
 H618E, H619E
 
 ## Reference
-Govee API : https://govee-public.s3.amazonaws.com/developer-docs/GoveeAPIReference.pdf
-
+Govee API : https://govee-public.s3.amazonaws.com/developer-docs/GoveeDeveloperAPIReference.pdf
 ## License
 It is released under the MIT License.
